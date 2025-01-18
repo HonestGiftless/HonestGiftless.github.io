@@ -68,6 +68,12 @@ header {
 }
 
 @media (max-width: 1200px) {
+    @media (orientation: landscape) {
+        header {
+            width: 100%;
+        }
+    }
+
     header {
         width: 100%;
         min-width: 100%;
@@ -88,7 +94,7 @@ header {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
     header {
         width: 100vw;
         min-width: 100vw;
