@@ -1,3 +1,5 @@
+/* TODO: Исходя из маленьких телефонов настроить отступы! */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,9 +31,9 @@ header {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 
-    padding: 0 50px 0 250px;
+    padding: 0 50px 0 300px;
     background-color: #fff;
-    z-index: 1;
+    z-index: 1001;
 }
 
 .burger-checkbox,
@@ -61,10 +63,8 @@ header {
         min-width: 100%;
     
         height: 130px;
-        min-height: 100px;
-        max-height: 250px;
 
-        padding: 0 50px 0 210px;
+        padding: 0 50px 0 300px;
     }
 
     .logo-img {
@@ -88,10 +88,8 @@ header {
         min-width: 100%;
     
         height: 130px;
-        min-height: 100px;
-        max-height: 250px;
 
-        padding: 0 50px 0 190px;
+        padding: 0 50px 0 300px;
     }
 
     .logo-img {
@@ -104,17 +102,34 @@ header {
 }
 
 @media (max-width: 900px) {
-    header {
-        width: 100vw;
-        min-width: 100vw;
-
-        height: 100px;
-        max-height: 100px;
-        
-        padding: 0 20px;
-        
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    @media screen and (orientation: portrait) {
+        header {
+            width: 100vw;
+            min-width: 100vw;
+    
+            height: 100px;
+            max-height: 100px;
+            
+            padding: 0 20px;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media screen and (orientation: landscape) {
+        header {
+            width: 100vw;
+            min-width: 100vw;
+    
+            height: 100px;
+            max-height: 100px;
+            
+            padding: 0 50px;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     .burger-checkbox {
