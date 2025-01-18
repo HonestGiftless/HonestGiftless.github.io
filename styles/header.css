@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
 
-    width: 100%;
-    min-width: 100%;
+    width: 100vw;
+    min-width: 100vw;
 
     height: 150px;
     min-height: 100px;
