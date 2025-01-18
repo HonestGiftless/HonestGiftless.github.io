@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* TODO: Исходя из маленьких телефонов настроить отступы! */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+
+/* COLORS */
+body {
+    --background: #F4F4F4;
+    --shadow: rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    position: fixed;
+    overflow-y: auto;
+
+    width: 250px;
+    height: calc(100vh - 150px);
+
+    background: #fff;
+    box-shadow: 5px 0 15px 2px var(--shadow);
+    z-index: 1000;
+}
+
+nav::-webkit-scrollbar {
+    width: 10px;
+}
+
+nav::-webkit-scrollbar-thumb {
+    cursor: grab;
+    background: #d6d6d6;
+    border-radius: 5px;
+}
+
+nav > ul {
+    height: 100%;
+    list-style-type: none;
+    
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 22px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav > ul > li {
+    cursor: pointer;
+    text-align: center;
+    padding: 25px 0;
+}
+
+@media (hover :hover) {
+    nav > ul > li:hover {
+        background-color: var(--background);
+        transition: 0.3s ease;
+    }
+
+    nav::-webkit-scrollbar-thumb:hover {
+        background: #c0c0c0;
+        transition: 0.3s ease;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    overflow-wrap: break-word;
+}
+
+.active-link-item {
+    background-color: var(--background);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        margin-top: 130px;
+    }
+
+    nav {
+        min-width: 210px;
+        max-width: 320px;
+
+        height: calc(100vh - 130px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin-top: 130px;
+    }
+
+    nav {
+        min-width: 190px;
+        max-width: 320px;
+
+        height: calc(100vh - 130px);
+    }
+
+    nav > ul {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    @media screen and (orientation: portrait) {
+        nav {
+            left: -300px;
+    
+            min-width: 160px;
+            max-width: 320px;
+    
+            height: calc(100vh - 100px);
+            transition: left 0.3s ease;
+        }
+
+        nav > ul > li {
+            padding: 25px 10px;
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        nav {
+            left: -260px;
+    
+            min-width: 160px;
+            max-width: 320px;
+    
+            height: calc(100vh - 100px);
+            transition: left 0.3s ease;
+        }
+
+        nav > ul > li {
+            padding: 25px 50px;
+        }
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    nav.open {
+        left: 0;
+    }
+
+    .hidden {
+        filter: brightness(40%);
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 998;
+        transition: filter 0.3 ease-in-out;
+    }
+
+    nav > ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    nav {
+        left: -300vw;
+        
+        min-width: 100vw;
+
+        height: calc(100vh - 100px);
+    }
+
+    nav.open {
+        left: 0;
+    }
+}
