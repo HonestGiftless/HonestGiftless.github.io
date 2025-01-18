@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тестовые задания</title>
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
 </head>
 <body>
-    <h1>Задание 1</h1>
-    <a href="./MST-task1">Ссылка</a>
-    <h1>Задание 2</h1>
-    <a href="./MST-task2">Ссылка</a>
+    <header>
+        <div class="empty-container">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+        </div>
+        <a href="./index.html" class="reload-link">
+            <img src="./img/Logo.svg" alt="Logotype" class="logo-img">
+        </a>
+        <a href="#" class="cart-link">
+            <img src="./img/Basket.svg" alt="Cart Icon" class="cart-img">
+        </a>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="active-link-item"><a href="./index.html" class="nav-link">Главная</a></li>
+                <li><a href="#" class="nav-link">Все товары</a></li>
+                <li><a href="#" class="nav-link">Фаты</a></li>
+                <li><a href="#" class="nav-link">Украшения</a></li>
+                <li><a href="#" class="nav-link">Юбки</a></li>
+                <li><a href="#" class="nav-link">Платья</a></li>
+                <li><a href="#" class="nav-link">Платья детские</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
