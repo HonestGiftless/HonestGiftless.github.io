@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.11 380.78">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: PlayfairDisplay-SemiBold, 'Playfair Display';
+        font-size: 78.23px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-family: PlayfairDisplay-ExtraBold, 'Playfair Display';
+        font-size: 185.3px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-2" x="87.34" width="273.74" height="273.74"/>
+    <rect class="cls-5" x="98.55" y="10.85" width="251.68" height="251.68"/>
+  </g>
+  <text class="cls-4" transform="translate(156.02 193.48)"><tspan x="0" y="0">К</tspan></text>
+  <text class="cls-1" transform="translate(0 361.85)"><tspan x="0" y="0">К</tspan><tspan class="cls-9" x="55.31" y="0">Р</tspan><tspan class="cls-8" x="103.73" y="0">И</tspan><tspan class="cls-7" x="166.79" y="0">Н</tspan><tspan class="cls-3" x="227.65" y="0">О</tspan><tspan class="cls-6" x="287.11" y="0">ЛИН</tspan></text>
+</svg>
