@@ -6,6 +6,7 @@ body, html {
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    -webkit-text-size-adjust: none;
 }
 
 /* COLORS */
@@ -104,14 +105,14 @@ nav > ul > li {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
     .container {
         margin-top: 100px;
         background: rgb(51, 255, 0);
     }
 
     nav {
-        left: -250px;
+        left: -190px;
 
         min-width: 160px;
         max-width: 320px;
@@ -130,6 +131,10 @@ nav > ul > li {
 
     nav > ul {
         font-size: 18px;
+    }
+
+    nav > ul > li {
+        padding: 25px 10px;
     }
 }
 
