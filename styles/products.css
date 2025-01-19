@@ -55,10 +55,6 @@ product-info__link {
 }
 
 @media (max-width: 1440px) {
-    .product-info__link {
-        color: red;
-    }
-
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         gap: 20px;
@@ -86,10 +82,6 @@ product-info__link {
 }
 
 @media (max-width: 1220px) {
-    .product-info__link {
-        color: orange;
-    }
-
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     }
@@ -117,10 +109,6 @@ product-info__link {
 
 @media (max-width: 900px) {
     @media screen and (orientation: portrait) {
-        .product-info__link {
-            color: red;
-        }
-
         .products-container {
             grid-template-columns: 1fr;
         }
@@ -141,10 +129,6 @@ product-info__link {
     }
 
     @media screen and (orientation: landscape) {
-        .product-info__link {
-            color: green;
-        }
-
         .products-container {
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
@@ -172,10 +156,6 @@ product-info__link {
 }
 
 @media (max-width: 350px) {
-    .product-info__link {
-        color: blue;
-    }
-
     .products-container {
         grid-template-columns: 1fr;
     }
