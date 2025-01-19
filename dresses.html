@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Фаты</title>
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="empty-container">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+        </div>
+        <a href="./index.html" class="reload-link">
+            <img src="./img/Logo.svg" alt="Logotype" class="logo-img">
+        </a>
+        <a href="#" class="cart-link">
+            <img src="./img/Basket.svg" alt="Cart Icon" class="cart-img">
+        </a>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="nav-link">Главная</a></li>
+                <li><a href="./products.html" class="nav-link">Все товары</a></li>
+                <li><a href="./veils.html" class="nav-link">Фаты</a></li>
+                <li><a href="./accessories.html" class="nav-link">Украшения</a></li>
+                <li><a href="./skirts.html" class="nav-link">Юбки</a></li>
+                <li class="active-link-item"><a href="./dresses.html" class="nav-link">Платья</a></li>
+                <li><a href="./child_dresses.html" class="nav-link">Платья детские</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>фаты</h1>
+            <div class="products-container">
+                <div class="product-card">
+                    <img src="./img/products/p1.png" alt="Product" class="product-image">
+                    <h2>Платье 1</h2>
+                    <a href="#" class="product-info__link">Подробнее</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="./img/products/p2.png" alt="Product" class="product-image">
+                    <h2>Платье 2</h2>
+                    <a href="#" class="product-info__link">Подробнее</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="contacts-container">
+            <ul>
+                <li>&copy; 2024. Кринолин. Все права защищены.</li>
+                <li><b>Адрес: </b>630049, г. Иркутск, ул. Улица, д. Дом</li>
+                <li><b>Телефон: </b>8-913-133-13-13</li>
+                <li><b>Email: </b>testmail@mail.mail</li>
+                <li><a href="#" class="admin-contact">Вход для администратора</a></li>
+            </ul>
+        </div>
+        <div class="social-container">
+            <ul>
+                <li><a href="#">
+                    <img src="./img/social/vk.svg" alt="VK Icon" class="footer__link-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="./img/social/tg.svg" alt="Telegram Icon" class="footer__link-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="./img/social/wp.svg" alt="Whatsapp Icon" class="footer__link-icon">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./scripts/navigation.js"></script>
+</body>
+</html>
