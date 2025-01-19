@@ -16,6 +16,7 @@ const listItems = document.querySelectorAll('nav > ul > li');
 listItems.forEach(item => {
     item.addEventListener('click', event => {
         const link = item.querySelector('a');
+        console.log(link);
 
         if (link) {
             window.location.href = link.href;
