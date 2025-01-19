@@ -10,3 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
         footer.classList.toggle('hidden');
     });
 });
+
+const listItems = document.querySelectorAll('nav > ul > li');
+
+listItems.forEach(item => {
+    item.addEventListener('click', event => {
+        const link = item.querySelector('a');
+
+        if (link) {
+            window.location.href = link.href;
+        }
+    });
+});
