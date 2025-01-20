@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Украшения</title>
+    <title>Товар</title>
 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navigation.css">
     <link rel="stylesheet" href="./styles/content.css">
-    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/productItem.css">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
@@ -28,28 +29,42 @@
         <nav>
             <ul>
                 <li><a href="./index.html" class="nav-link">Главная</a></li>
-                <li><a href="./products.html" class="nav-link">Все товары</a></li>
+                <li class="active-link-item"><a href="./products.html" class="nav-link">Все товары</a></li>
                 <li><a href="./veils.html" class="nav-link">Фаты</a></li>
-                <li class="active-link-item"><a href="./accessories.html" class="nav-link">Украшения</a></li>
+                <li><a href="./accessories.html" class="nav-link">Украшения</a></li>
                 <li><a href="./skirts.html" class="nav-link">Юбки</a></li>
                 <li><a href="./dresses.html" class="nav-link">Платья</a></li>
                 <li><a href="./child_dresses.html" class="nav-link">Платья детские</a></li>
             </ul>
         </nav>
         <main>
-            <h1>Украшения</h1>
-            <div class="products-container">
-                <div class="product-card">
-                    <img src="./img/products/p1.png" alt="Product" class="product-image">
-                    <h2>Украшение 1</h2>
-                    <a href="./productItem.html" class="product-info__link">Подробнее</a>
+            <h1>название товара</h1>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./img/products/p1.png" alt="Product 1"></div>
+                    <div class="slide"><img src="./img/products/p2.png" alt="Product 2"></div>
+                    <div class="slide"><img src="./img/products/p3.png" alt="Product 3"></div>
                 </div>
-
-                <div class="product-card">
-                    <img src="./img/products/p2.png" alt="Product" class="product-image">
-                    <h2>Украшение 2</h2>
-                    <a href="./productItem.html" class="product-info__link">Подробнее</a>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="dots">
+                    <span class="dot" onclick="setSlide(0)"></span>
+                    <span class="dot" onclick="setSlide(1)"></span>
+                    <span class="dot" onclick="setSlide(2)"></span>
                 </div>
+            </div>
+            <h2>Описание</h2>
+            <p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Равным образом начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </p>
+            <h2>Размеры</h2>
+            <div class="sizes-container">
+                <input type="button" value="s" class="size-btn">
+                <input type="button" value="m" class="size-btn">
+                <input type="button" value="l" class="size-btn">
+                <input type="button" value="xl" class="size-btn">
+                <input type="button" value="xxl" class="size-btn">
+            </div>
+            <div class="btn-container">
+                <button class="add-btn">В корзину</button>
             </div>
         </main>
     </div>
@@ -79,5 +94,6 @@
     </footer>
 
     <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>
