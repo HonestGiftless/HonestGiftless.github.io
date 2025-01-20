@@ -1,0 +1,172 @@
+.slider,
+.sizes-container,
+.btn-container {
+    margin-bottom: 40px;
+}
+
+main > h2 {
+    margin-bottom: 20px;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sizes-container {
+    display: flex;
+    gap: 20px;
+}
+
+.size-btn {
+    width: 60px;
+    height: 60px;
+
+    text-transform: uppercase;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn {
+    border: none;
+    cursor: pointer;
+
+    color: #fff;
+    background-color: #000;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+
+    padding: 10px 20px;
+    transition: 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+    .size-btn:hover {
+        opacity: .5;
+        transition: 0.3s ease-in-out;
+    }
+
+    .add-btn:hover {
+        opacity: .7;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media (max-width: 1440px) {
+    main > h2 {
+        margin-bottom: 16px;
+    }
+
+    .sizes-container {
+        gap: 18px;
+    }
+
+    .size-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .add-btn {
+        font-size: 25px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main > h2 {
+        margin-bottom: 14px;
+    }
+
+    .sizes-container {
+        gap: 16px;
+    }
+
+    .size-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .add-btn {
+        font-size: 24px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    main > h2 {
+
+        margin-bottom: 10px;
+    }
+
+    .sizes-container {
+        gap: 14px;
+    }
+
+    @media screen and (orientation: portrait) {
+        .size-btn {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+        }
+
+        .add-btn {
+            font-size: 22px;
+            padding: 10px 14px;
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        .size-btn {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+        }
+
+        .add-btn {
+            font-size: 22px;
+            padding: 10px 14px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    main > h2 {
+        margin-bottom: 6px;
+    }
+
+    .sizes-container {
+        gap: 12px;
+    }
+
+    .size-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .add-btn {
+        font-size: 20px;
+        padding: 10px 12px;
+    }
+}
