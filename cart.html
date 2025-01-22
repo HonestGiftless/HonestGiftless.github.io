@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Корзина</title>
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="empty-container">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+        </div>
+        <a href="./index.html" class="reload-link">
+            <img src="./img/Logo.svg" alt="Logotype" class="logo-img">
+        </a>
+        <a href="./cart.html" class="cart-link">
+            <img src="./img/Basket.svg" alt="Cart Icon" class="cart-img">
+        </a>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="nav-link">Главная</a></li>
+                <li class="active-link-item"><a href="./products.html" class="nav-link">Все товары</a></li>
+                <li><a href="./veils.html" class="nav-link">Фаты</a></li>
+                <li><a href="./accessories.html" class="nav-link">Украшения</a></li>
+                <li><a href="./skirts.html" class="nav-link">Юбки</a></li>
+                <li><a href="./dresses.html" class="nav-link">Платья</a></li>
+                <li><a href="./child_dresses.html" class="nav-link">Платья детские</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Корзина</h1>
+            <div class="products-container">
+                <div class="product-container">
+                    <img src="./img/products/p1.png" alt="Product" class="product-img">
+                    <div class="product-description">
+                        <h2>Товар "Название"</h2>
+                        <input type="button" value="s" class="size-btn">
+                        <div class="quantity">
+                            <span>Количество</span>
+                            <button class="minus quantity-btn">-</button>
+                            <span class="quantity-text">2</span>
+                            <button class="plus quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="product-container">
+                    <img src="./img/products/p1.png" alt="Product" class="product-img">
+                    <div class="product-description">
+                        <h2>Товар "Название"</h2>
+                        <input type="button" value="XXL" class="size-btn">
+                        <div class="quantity">
+                            <span>Количество</span>
+                            <button class="minus quantity-btn">-</button>
+                            <span class="quantity-text">4</span>
+                            <button class="plus quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="product-container">
+                    <img src="./img/products/p1.png" alt="Product" class="product-img">
+                    <div class="product-description">
+                        <h2>Товар "Название"</h2>
+                        <input type="button" value="m" class="size-btn">
+                        <div class="quantity">
+                            <span>Количество</span>
+                            <button class="minus quantity-btn">-</button>
+                            <span class="quantity-text">1</span>
+                            <button class="plus quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+            <h1>оформление заказа</h1>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+
+                <button type="submit">Заказать</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="contacts-container">
+            <ul>
+                <li>&copy; 2024. Кринолин. Все права защищены.</li>
+                <li><b>Адрес: </b>630049, г. Иркутск, ул. Улица, д. Дом</li>
+                <li><b>Телефон: </b>8-913-133-13-13</li>
+                <li><b>Email: </b>testmail@mail.mail</li>
+                <li><a href="#" class="admin-contact">Вход для администратора</a></li>
+            </ul>
+        </div>
+        <div class="social-container">
+            <ul>
+                <li><a href="#">
+                    <img src="./img/social/vk.svg" alt="VK Icon" class="footer__link-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="./img/social/tg.svg" alt="Telegram Icon" class="footer__link-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="./img/social/wp.svg" alt="Whatsapp Icon" class="footer__link-icon">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./scripts/navigation.js"></script>
+</body>
+</html>
