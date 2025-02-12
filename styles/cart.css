@@ -271,7 +271,7 @@ form > button {
     }
 } 
 
-@media (max-width: 373px) {
+@media (max-width: 377px) {
     .product-img {
         width: 180px;
         height: 180px;
