@@ -155,7 +155,7 @@ product-info__link {
     }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 377px) {
     .products-container {
         grid-template-columns: 1fr;
     }
