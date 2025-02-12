@@ -195,7 +195,7 @@ header {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 373px) {
     header {
         width: 100%;
         min-width: 100%;

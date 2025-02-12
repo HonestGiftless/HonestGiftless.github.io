@@ -216,7 +216,7 @@ main > h2 {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 373px) {
     main > h2 {
         margin-bottom: 6px;
     }

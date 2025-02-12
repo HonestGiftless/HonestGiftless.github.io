@@ -165,7 +165,7 @@ nav > ul > li {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 373px) {
     .container {
         margin-top: 100px;
     }
