@@ -97,7 +97,7 @@ main > p {
     }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 377px) {
     .container {
         margin-top: 100px;
     }
